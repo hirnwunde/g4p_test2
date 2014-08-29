@@ -31,7 +31,7 @@ public void btn_connect_click1(GButton source, GEvent event) { //_CODE_:btn_conn
 } //_CODE_:btn_connect:750775:
 
 public void btn_disconnect_click1(GButton source, GEvent event) { //_CODE_:btn_disconnect:746234:
-  println("btn_disconnect - GButton >> GEvent." + event + " @ " + millis());
+  disconnectFromPort();
 } //_CODE_:btn_disconnect:746234:
 
 public void textfield2_change1(GTextField source, GEvent event) { //_CODE_:textfield2:364693:

@@ -22,13 +22,10 @@ void serialEvent(Serial p) {
   
   ta_importedGCode.appendText(SerialIncoming);
   
-  
   String[] XYraw = split(SerialIncoming, "_");
-  String[] XY = split(XYraw[1], "Y");
-  String[] Xtemp = split(XY[0], "X");
   
-  String X = Xtemp[0];
-  String Y = XY[1]; 
+  String X = XYraw[1].substring(1);
+  String Y = XYraw[2].substring(1); 
 
   textfield2.setText(X);
   textfield3.setText(Y);
